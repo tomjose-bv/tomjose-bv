@@ -8,9 +8,9 @@ The thread running through these projects: **prompt → context engineering → 
 
 | Project | What it does | Highlights |
 |---|---|---|
-| [**voice-agent-evals**](https://github.com/tomjose-bv/voice-agent-evals) | A local customer-service voice agent plus an evaluation harness: 25 scenarios, simulated callers, and metrics for task completion, escalation and hallucination | Compares prompt-only, context-engineered and governed-graph agents on the same scenarios: pass rate 16% → 28% → 44%, escalation recall 25% → 100% (local 3B model, held-out validated) |
+| [**voice-agent-evals**](https://github.com/tomjose-bv/voice-agent-evals) | A local customer-service voice agent plus an evaluation harness: 25 scenarios, simulated callers, and metrics for task completion, escalation and hallucination | Compares five agent designs on the same scenarios (local 3B model, three seeds, held-out validated): pass rate 16% → 28% → 44% → 48% from plain prompt to governed graph with grounding, escalation recall 25% → 100% |
 | [**agent-guard**](https://github.com/tomjose-bv/agent-guard) | A governance proxy between AI agents and their tools (MCP): YAML policies, PII redaction, human approval, tamper-evident audit log | About 2–4 ms measured overhead per tool call |
-| [**live-captions**](https://github.com/tomjose-bv/live-captions) | Offline real-time captions for anything playing on a Windows PC, with a speech-to-text benchmark | Moonshine base: 3.8% WER at 18× real time on a laptop CPU |
+| [**live-captions**](https://github.com/tomjose-bv/live-captions) | Offline real-time captions for anything playing on a Windows PC, plus reading text from any screen area (OCR, including long pages while you scroll) and recording a screen area to video | Moonshine base: 3.8% WER at 18× real time on a laptop CPU |
 | [**claude-usage-widget**](https://github.com/tomjose-bv/claude-usage-widget) | A tiny always-on-top Windows widget showing remaining Claude plan usage, with history and burn-rate estimates | Zero dependencies, one-command install |
 
 ### How I build
